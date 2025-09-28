@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>UHFReader.Core</RootNamespace>
+    <AssemblyName>UHFReader.NET.Core</AssemblyName>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>false</UseWindowsForms>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <Platforms>x86;x64;ARM64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Ports" Version="8.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\Example\LoadMemLibrary.dll" Link="Native\LoadMemLibrary.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Example\UHFReader18.dll" Link="Native\UHFReader18.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

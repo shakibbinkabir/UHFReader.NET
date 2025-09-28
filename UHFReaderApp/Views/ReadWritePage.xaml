@@ -1,0 +1,13 @@
+<Page
+    x:Class="UHFReaderApp.Views.ReadWritePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Margin="20">
+        <StackPanel Spacing="20">
+            <TextBlock Text="Read/Write Tags" Style="{ThemeResource HeaderTextBlockStyle}"/>
+            <TextBlock Text="Tag read/write functionality will be implemented here." 
+                      Style="{ThemeResource BodyTextBlockStyle}"/>
+        </StackPanel>
+    </Grid>
+</Page>
