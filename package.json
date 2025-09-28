@@ -1,0 +1,61 @@
+{
+  "name": "uhf-rfid-reader-windows11",
+  "version": "1.0.0",
+  "description": "Modern Windows 11 UHF RFID Reader Application built with WinUI 3 and .NET 8",
+  "main": "UHFReaderApp",
+  "scripts": {
+    "build": "dotnet build UHFReader.NET.Modern.sln -c Release",
+    "build-core": "dotnet build UHFReader.NET.Core/UHFReader.NET.Core.csproj -c Release",
+    "clean": "dotnet clean UHFReader.NET.Modern.sln",
+    "restore": "dotnet restore UHFReader.NET.Modern.sln",
+    "test-core": "dotnet build UHFReader.NET.Core/UHFReader.NET.Core.csproj -c Debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shakibbinkabir/UHFReader.NET"
+  },
+  "keywords": [
+    "RFID",
+    "UHF",
+    "Windows11",
+    "WinUI3",
+    "NET8",
+    "Reader",
+    "Inventory",
+    "Hardware"
+  ],
+  "author": "UHF Reader Development Team",
+  "license": "MIT",
+  "devDependencies": {
+    "note": "This is not a Node.js project - use for reference only"
+  },
+  "engines": {
+    "dotnet": ">=8.0.0",
+    "windows": ">=11.0.0"
+  },
+  "os": [
+    "win32"
+  ],
+  "requirements": {
+    "development": [
+      "Windows 11 (required for WinUI 3)",
+      "Visual Studio 2022 with Windows App SDK",
+      ".NET 8 SDK",
+      "Windows 11 SDK"
+    ],
+    "runtime": [
+      "Windows 11",
+      ".NET 8 Runtime",
+      "UHF RFID Reader Hardware",
+      "UHFReader18.dll (included)",
+      "LoadMemLibrary.dll (included)"
+    ]
+  },
+  "features": {
+    "ui": "WinUI 3 with modern Windows 11 design",
+    "connectivity": "Network (TCP/IP) and Serial (COM) support",
+    "scanning": "Real-time tag inventory with 500ms intervals",
+    "export": "CSV export functionality",
+    "architecture": "Service-based with proper separation of concerns"
+  }
+}
