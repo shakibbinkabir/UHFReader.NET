@@ -1,0 +1,34 @@
+<winuiex:WindowEx
+    x:Class="UHFReaderApp.Views.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:winuiex="using:WinUIEx">
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <!-- Title Bar -->
+        <Border Grid.Row="0" Background="{ThemeResource AccentFillColorDefaultBrush}" Padding="20,10">
+            <TextBlock Text="UHF RFID Reader" 
+                      Style="{ThemeResource TitleTextBlockStyle}" 
+                      Foreground="White" 
+                      HorizontalAlignment="Center"/>
+        </Border>
+        
+        <!-- Main Content -->
+        <NavigationView Grid.Row="1" x:Name="MainNavigation" IsBackButtonVisible="Collapsed">
+            <NavigationView.MenuItems>
+                <NavigationViewItem Icon="Connect" Content="Connection" Tag="Connection"/>
+                <NavigationViewItem Icon="ViewAll" Content="Inventory" Tag="Inventory"/>
+                <NavigationViewItem Icon="Edit" Content="Read/Write" Tag="ReadWrite"/>
+                <NavigationViewItem Icon="Setting" Content="Settings" Tag="Settings"/>
+                <NavigationViewItem Icon="Library" Content="Logs" Tag="Logs"/>
+            </NavigationView.MenuItems>
+            
+            <Frame x:Name="ContentFrame" NavigationFailed="ContentFrame_NavigationFailed"/>
+        </NavigationView>
+    </Grid>
+</winuiex:WindowEx>

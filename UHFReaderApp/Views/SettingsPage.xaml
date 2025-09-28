@@ -1,0 +1,13 @@
+<Page
+    x:Class="UHFReaderApp.Views.SettingsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Margin="20">
+        <StackPanel Spacing="20">
+            <TextBlock Text="Settings" Style="{ThemeResource HeaderTextBlockStyle}"/>
+            <TextBlock Text="Application settings will be available here." 
+                      Style="{ThemeResource BodyTextBlockStyle}"/>
+        </StackPanel>
+    </Grid>
+</Page>

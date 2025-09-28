@@ -1,0 +1,13 @@
+<Page
+    x:Class="UHFReaderApp.Views.LogsPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <Grid Margin="20">
+        <StackPanel Spacing="20">
+            <TextBlock Text="Application Logs" Style="{ThemeResource HeaderTextBlockStyle}"/>
+            <TextBlock Text="System and error logs will be displayed here." 
+                      Style="{ThemeResource BodyTextBlockStyle}"/>
+        </StackPanel>
+    </Grid>
+</Page>
